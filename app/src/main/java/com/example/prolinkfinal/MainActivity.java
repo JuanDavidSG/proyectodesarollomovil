@@ -28,10 +28,14 @@ public class MainActivity extends AppCompatActivity implements ServiceAdapter.On
         services = new ArrayList<>();
 
         // Agregar servicios de ejemplo
-        services.add(new Service("plomeria", 12, R.drawable.plomeria));
-        services.add(new Service("jardineria", 8, R.drawable.jardineria));
-        services.add(new Service("tutoria", 15, R.drawable.tutoria));
-        services.add(new Service("reparacion", 10, R.drawable.reparacion));
+        services.add(new Service("plomeria", 12, R.drawable.plomeria, 4));
+        services.add(new Service("jardineria", 8, R.drawable.jardineria, 3));
+        services.add(new Service("tutoria", 15, R.drawable.tutoria, 2.5));
+        services.add(new Service("reparacion", 10, R.drawable.reparacion, 4.1));
+        services.add(new Service("construccion", 6, R.drawable.construccion, 4));
+        services.add(new Service("electrodomesticos", 4, R.drawable.electrodomesticos, 3));
+        services.add(new Service("ferreteria", 11, R.drawable.ferreteria, 2.5));
+        services.add(new Service("supermercado", 40, R.drawable.supermercado, 4.1));
 
 
         serviceAdapter = new ServiceAdapter(services, this);

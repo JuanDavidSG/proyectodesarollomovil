@@ -3,22 +3,22 @@ package com.example.prolinkfinal;
 public class Service {
     private String title;
     private int availableProviders;
-    private int imageResourceId;  // New field for service image
+    private int imageResourceId;
+    private double starts;
 
-    public Service(String title, int availableProviders, int imageResourceId) {
+    public Service(String title, int availableProviders, int imageResourceId, double starts) {
         this.title = title;
         this.availableProviders = availableProviders;
         this.imageResourceId = imageResourceId;
+        this.starts = starts;
     }
 
-    // Add getter for imageResourceId
     public int getImageResourceId() { return imageResourceId; }
-    // Existing getters remain the same
     public String getTitle() {
         return title;
     }
     public int getAvailableProviders() {
         return availableProviders;
     }
-    public void setImageBitmap(int imageResourceId) { this.imageResourceId = imageResourceId; }
+    public double getStarts() { return starts; }
 }

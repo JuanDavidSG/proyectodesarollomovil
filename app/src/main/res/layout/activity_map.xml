@@ -33,4 +33,54 @@
         android:layout_marginTop="16dp"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/closer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/mapView"
+        android:layout_marginTop="16dp"
+        android:text="MÁS CERCANO" />
+
+    <View
+        android:id="@+id/closer_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/closer"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/closer_line"
+        android:layout_marginTop="16dp"
+        android:text="NOMBRE MÁS CERCANO" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        android:layout_marginTop="5dp"
+        android:text="Dirección" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
